@@ -38,7 +38,7 @@ pipeline {
              stage ('Deploy on Webserver Stage') {
             steps {
              
-                   sh "sudo cp -rf /var/lib/jenkins/workspace/Pipeline-Maven-jenkinsfile-git-artifacts/target/*.war /root/jenkins/apache-tomcat-9.0.48/webapps"
+                   sh "sudo cp -rf /var/lib/jenkins/workspace/jfrog-demo/target/*.war /root/jenkins/apache-tomcat-9.0.48/webapps"
            
               }
             }   
